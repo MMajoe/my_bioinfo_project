@@ -1,0 +1,51 @@
+#Omics logic githib for bioinformatics:
+#after installing git for windows (git bash)
+#connect existing github account to git bash
+
+git config --global user.name “MMajoe”
+git config --global user.email “megha_majoe@yahoo.co.in”
+# check the details:
+git config --list
+
+mkdir my_bioinfo_project
+
+cd my_bioinfo_project/
+
+git init
+#Initialized empty Git repository in C:/Users/Megha_offline/LearningGithub/my_bioinfo_project/.git/
+
+touch index.html
+#makes an html file. can also be .txt, .csv etc
+
+ls 
+
+git add .
+
+#use file name instead of dot  if you get confused or have other files
+
+git status
+
+git commit -m "initial commit"
+
+#### as of now:
+#Megha_offline@Megha_Ideapad5 MINGW64 ~/LearningGithub/my_bioinfo_project (master)
+#$ git commit -m "initial commit"
+#[master (root-commit) 033acbb] initial commit
+# 1 file changed, 0 insertions(+), 0 deletions(-)
+ #create mode 100644 index.html
+ 
+ 
+#now we go to github account and move the repository and and the file:
+…or push an existing repository from the command line
+$ git push -u origin main
+#Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 229 bytes | 229.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/MMajoe/my_bioinfo_project.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+git pull origin main
+
+cat index.html
